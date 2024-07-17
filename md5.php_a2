@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<head>
+<title>Prem Sharma's MD5 encoder</title>
+</head>
+<body>
+<h2>MD5 Maker</h2>
+<?php
+	$md5="not computed";
+	if ( isset($_GET['md5'] ))
+	{
+		$md5=hash('md5',$_GET['md5']);
+		print $md5;
+	}
+	
+?>
+<p>Enter text to get hash:</p>
+<form>
+<input type="text" name="md5" size="60">
+<input type="submit" value="Submit">
+</form>
+<br>
+<a href=md5.php>Reset</a>
+<br>
+<br>
+<a href="indexo.php">Back</a>
+</body>
+</html>
